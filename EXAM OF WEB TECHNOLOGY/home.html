@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <link rel="stylesheet" type="text/css" href="style.css" title="style 1" media="screen, tv, projection, handheld, print"/>
+  
+  <title> Our Home Page</title>
+
+  <style>
+  .dropdown {
+    position: relative;
+    display: inline;
+    margin-right: 10px;
+  }
+  .dropdown-contents {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    left: 0; 
+  }
+  .dropdown:hover .dropdown-contents {
+    display: block;
+  }
+  .dropdown-contents a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-contents a:hover {
+    background-color: #f1f1f1;
+  }
+</style> 
+</head>
+<body  style="background-image: url('./images/language.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+  <ul style="list-style-type: none; padding: 0;">
+     <li style="display: inline; margin-right: 10px;"><a href="./home.html">HOME</a> </li>
+    <li style="display: inline; margin-right: 10px;"><a href="./userof.php">USEROF</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./translation.php">TRANSLATION</a> </li>
+    <li style="display: inline; margin-right: 10px;"><a href="./sourcetext.php">SOURCETEXT</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./language.php">LANGUAGE</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./feedback.php">FEEDBACK</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./dictionary.php">DICTIONARY</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./translationmemory.php">TRANSLATION MEMORY</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./translationhistory.php">TRANSLATION HISTORY</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./userpreference.php">USER PREFERENCE</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./glossary.php">GLOSSARY</a></li>
+   
+   <li class="dropdown" style="display: inline; margin-right: 10px;">
+      <a href="#" style="padding: 10px; color: white; background-color: orange; text-decoration: none; margin-right: 15px;">Settings</a>
+      <div class="dropdown-contents">
+        
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+        <a href="logout.php">Logout</a>
+      </div>
+    </li>
+  </ul>
+  
+  <form class="d-flex" role="search" action="search.php">
+    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success" type="submit">Search</button>
+  </form>
+
+  <center>
+    <section id="home" style="color: orange;"><br><br><br><br>
+     <marquee> <h1>WELCOME IN LANGUAGE TRANSLATION SYSTEM</h1></marquee>
+    </section>
+  </center>
+  
+</body>
+</html>
